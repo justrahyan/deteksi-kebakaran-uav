@@ -2,17 +2,19 @@ import os
 import matplotlib.pyplot as plt
 import tensorflow as tf
 
-def load_datasets(train_dir, test_dir, img_size=(224, 224), batch_size=32):
+def load_datasets(train_dir, test_dir, img_size=(224, 224), batch_size=32, label_mode="int"):
     train_ds = tf.keras.utils.image_dataset_from_directory(
         train_dir,
         image_size=img_size,
-        batch_size=batch_size
+        batch_size=batch_size,
+        label_mode=label_mode
     )
 
     test_ds = tf.keras.utils.image_dataset_from_directory(
         test_dir,
         image_size=img_size,
-        batch_size=batch_size
+        batch_size=batch_size,
+        label_mode=label_mode
     )
 
     class_names = train_ds.class_names  # simpan class names sebelum normalisasi

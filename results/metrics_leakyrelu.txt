@@ -1,0 +1,22 @@
+
+ResNet50 Evaluation:
+              precision    recall  f1-score   support
+
+        fire       0.99      0.83      0.90       700
+      nofire       0.62      0.98      0.76       200
+
+    accuracy                           0.86       900
+   macro avg       0.81      0.91      0.83       900
+weighted avg       0.91      0.86      0.87       900
+
+
+MobileNetV2 Evaluation:
+              precision    recall  f1-score   support
+
+        fire       0.99      1.00      1.00       700
+      nofire       1.00      0.96      0.98       200
+
+    accuracy                           0.99       900
+   macro avg       1.00      0.98      0.99       900
+weighted avg       0.99      0.99      0.99       900
+
